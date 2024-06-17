@@ -117,7 +117,6 @@ def draw_star(
     for i in range(5):
         print_turtle_position(t)
         t.forward(length)
-        #Explain why this function would work without setting the initial turning angle for the very first loop
         if initial_rotation_direction == 'left':
             t.left(angle)
         else:
@@ -125,7 +124,6 @@ def draw_star(
         t.forward(length)
         if initial_rotation_direction == 'left':
             t.right(angle - 72)
-            #Explain why we are turning right when the initial rotation direction is left
         else:
             t.left(angle - 72)
     t.end_fill()
